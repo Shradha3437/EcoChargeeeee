@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner With Us - EcoCharge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-charging-station"></i>
+                <span>EcoCharge</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="locator.html" class="nav-link">Find Stations</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="partner.html" class="nav-link active">Partner</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Partner Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Partner With EcoCharge</h1>
+            <p>Join the electric revolution and build a profitable business</p>
+        </div>
+    </section>
+
+    <!-- Partnership Benefits -->
+    <section class="partnership-benefits">
+        <div class="container">
+            <h2>Why Partner With Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Proven ROI</h3>
+                    <p>Our partners see an average ROI of 25-35% within the first 18 months of operation.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Full Support</h3>
+                    <p>Complete installation, maintenance, and 24/7 technical support included.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Technology Platform</h3>
+                    <p>Access to our award-winning mobile app and payment processing system.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Brand Recognition</h3>
+                    <p>Leverage the trusted EcoCharge brand with national marketing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Models -->
+    <section class="partnership-models">
+        <div class="container">
+            <h2>Partnership Models</h2>
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-header">
+                        <h3>Site Host Partnership</h3>
+                        <div class="investment-level">Low Investment</div>
+                    </div>
+                    <div class="model-content">
+                        <p>Provide the location, we handle everything else.</p>
+                        <ul>
+                            <li>No upfront costs</li>
+                            <li>Revenue sharing model</li>
+                            <li>We install and maintain equipment</li>
+                            <li>Perfect for retail locations</li>
+                        </ul>
+                        <div class="roi-info">
+                            <strong>Expected ROI: 15-25%</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card featured">
+                    <div class="model-header">
+                        <h3>Franchise Partnership</h3>
+                        <div class="investment-level">Medium Investment</div>
+                    </div>
+                    <div class="model-content">
+                        <p>Own and operate your own EcoCharge stations.</p>
+                        <ul>
+                            <li>$150K - $300K initial investment</li>
+                            <li>Exclusive territory rights</li>
+                            <li>Complete business support</li>
+                            <li>Marketing and branding included</li>
+                        </ul>
+                        <div class="roi-info">
+                            <strong>Expected ROI: 25-35%</strong>
+                        </div>
+                    </div>
+                    <div class="popular-badge">Most Popular</div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-header">
+                        <h3>Master Franchise</h3>
+                        <div class="investment-level">High Investment</div>
+                    </div>
+                    <div class="model-content">
+                        <p>Develop an entire region with multiple locations.</p>
+                        <ul>
+                            <li>$500K+ initial investment</li>
+                            <li>Multi-state territory rights</li>
+                            <li>Sub-franchising opportunities</li>
+                            <li>Dedicated support team</li>
+                        </ul>
+                        <div class="roi-info">
+                            <strong>Expected ROI: 30-45%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-calculator">
+        <div class="container">
+            <h2>ROI Calculator</h2>
+            <div class="calculator-content">
+                <div class="calculator-form">
+                    <h3>Estimate Your Potential Returns</h3>
+                    <form id="roiForm">
+                        <div class="form-group">
+                            <label for="location">Location Type</label>
+                            <select id="location" required>
+                                <option value="">Select location type</option>
+                                <option value="retail">Retail Center</option>
+                                <option value="highway">Highway Rest Stop</option>
+                                <option value="workplace">Workplace</option>
+                                <option value="residential">Residential Complex</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stations">Number of Charging Stations</label>
+                            <input type="number" id="stations" min="2" max="20" value="4" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="utilization">Expected Daily Utilization (%)</label>
+                            <input type="range" id="utilization" min="10" max="80" value="40">
+                            <span id="utilizationValue">40%</span>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" onclick="calculateROI()">Calculate ROI</button>
+                    </form>
+                </div>
+                
+                <div class="calculator-results">
+                    <h3>Projected Returns</h3>
+                    <div id="roiResults" class="results-display">
+                        <p>Fill out the form to see your potential returns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2>Partner Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <img src="Pictures\Gemini_Generated_Image_iy66yiiy66yiiy66.png" alt="Success Story 1">
+                    <div class="story-content">
+                        <h3>Metro Shopping Center</h3>
+                        <p class="location">Denver, CO</p>
+                        <p>"Our EcoCharge stations have increased foot traffic by 30% and generated $50K in additional revenue in the first year."</p>
+                        <div class="story-stats">
+                            <span>ROI: 28%</span>
+                            <span>Payback: 16 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <img src="Pictures\Gemini_Generated_Image_dcqqridcqqridcqq.png" alt="Success Story 2">
+                    <div class="story-content">
+                        <h3>Highway Travel Plaza</h3>
+                        <p class="location">Austin, TX</p>
+                        <p>"The franchise model allowed us to expand to 5 locations. We're now generating over $200K annually."</p>
+                        <div class="story-stats">
+                            <span>ROI: 35%</span>
+                            <span>Payback: 14 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <img src="Pictures\Gemini_Generated_Image_4ayndv4ayndv4ayn.png" alt="Success Story 3">
+                    <div class="story-content">
+                        <h3>Corporate Campus</h3>
+                        <p class="location">Seattle, WA</p>
+                        <p>"Employee satisfaction increased significantly, and we're attracting top talent who value sustainability."</p>
+                        <div class="story-stats">
+                            <span>ROI: 22%</span>
+                            <span>Payback: 18 months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="partner-contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Join hundreds of successful partners who are building the future of transportation.</p>
+                    
+                    <div class="contact-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Free site assessment</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Detailed ROI projection</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No obligation consultation</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-direct">
+                        <h4>Prefer to talk directly?</h4>
+                        <p><i class="fas fa-phone"></i> 1-800-ECO-CHARGE</p>
+                        <p><i class="fas fa-envelope"></i> partners@ecocharge.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="partnerForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="partnershipType" required>
+                                <option value="">Select Partnership Type</option>
+                                <option value="site-host">Site Host Partnership</option>
+                                <option value="franchise">Franchise Partnership</option>
+                                <option value="master-franchise">Master Franchise</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="locationCity" placeholder="Proposed Location (City, State)" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Tell us about your location and goals" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Request Partnership Information</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-charging-station"></i>
+                        <span>EcoCharge</span>
+                    </div>
+                    <p>Leading the electric vehicle charging revolution with sustainable, reliable solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Public Charging</a></li>
+                        <li><a href="services.html">Home Installation</a></li>
+                        <li><a href="services.html">Fleet Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoCharge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="partner.js"></script>
+</body>
+</html>

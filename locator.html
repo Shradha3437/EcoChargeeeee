@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Locator - EcoCharge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-charging-station"></i>
+                <span>EcoCharge</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="locator.html" class="nav-link active">Find Stations</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="partner.html" class="nav-link">Partner</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Station Locator -->
+    <section class="locator-section">
+        <div class="container">
+            <h1>Find Charging Stations</h1>
+            
+            <!-- Search and Filters -->
+            <div class="search-filters">
+                <div class="search-box">
+                    <input type="text" id="locationSearch" placeholder="Enter city, address, or ZIP code">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="filters">
+                    <select id="chargerType">
+                        <option value="">All Charger Types</option>
+                        <option value="level1">Level 1 (120V)</option>
+                        <option value="level2">Level 2 (240V)</option>
+                        <option value="dcfast">DC Fast Charging</option>
+                    </select>
+                    
+                    <select id="availability">
+                        <option value="">All Stations</option>
+                        <option value="available">Available Now</option>
+                        <option value="busy">Busy</option>
+                    </select>
+                    
+                    <select id="pricing">
+                        <option value="">All Pricing</option>
+                        <option value="free">Free</option>
+                        <option value="paid">Paid</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Map and Results -->
+            <div class="locator-content">
+                <div class="map-container">
+                    <div id="map" class="map">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Interactive Map</p>
+                            <small>Map will load here with station locations</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-container">
+                    <h3>Nearby Stations</h3>
+                    <div class="station-list" id="stationList">
+                        <!-- Station results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-charging-station"></i>
+                        <span>EcoCharge</span>
+                    </div>
+                    <p>Leading the electric vehicle charging revolution with sustainable, reliable solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Public Charging</a></li>
+                        <li><a href="services.html">Home Installation</a></li>
+                        <li><a href="services.html">Fleet Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoCharge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="locator.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJSpqndrxzdGNp8xr7tM9iE4GOXv_uSi4&callback=initMap"></script>
+</body>
+</html>

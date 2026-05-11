@@ -1,4 +1,4 @@
-# EcoCharge ⚡🌱
+# EcoCharge
 
 EcoCharge is an eco-friendly EV charging station management platform designed to promote sustainable transportation. The project helps users locate nearby EV charging stations, monitor charging availability, and manage charging sessions efficiently.
 
